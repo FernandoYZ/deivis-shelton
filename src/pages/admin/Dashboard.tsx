@@ -8,13 +8,13 @@ import {
 import { Button } from "@/components/ui/button";
 import {
   Users,
-  UserMd,
   Calendar,
   DollarSign,
   TrendingUp,
   Clock,
   AlertCircle,
   Plus,
+  UserCheck,
 } from "lucide-react";
 import { dashboardStats, mockPatients, mockDoctors } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
@@ -49,7 +49,7 @@ const statCards = [
     value: dashboardStats.doctorsAvailable,
     change: "2/2",
     changeType: "neutral" as const,
-    icon: UserMd,
+    icon: UserCheck,
     color: "bg-purple-500",
   },
 ];
@@ -178,7 +178,7 @@ export default function Dashboard() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center">
-              <UserMd className="h-5 w-5 mr-2 text-medical-600" />
+              <UserCheck className="h-5 w-5 mr-2 text-medical-600" />
               Doctores Disponibles
             </CardTitle>
             <CardDescription>

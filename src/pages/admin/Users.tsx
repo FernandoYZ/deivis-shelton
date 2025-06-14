@@ -14,13 +14,13 @@ import {
   Plus,
   Shield,
   User,
-  UserMd,
   Settings,
   MoreHorizontal,
   Ban,
   CheckCircle,
   XCircle,
   Clock,
+  UserCheck,
 } from "lucide-react";
 import { mockUsers } from "@/lib/data";
 import { User as UserType } from "@/types";
@@ -44,7 +44,7 @@ import { Switch } from "@/components/ui/switch";
 
 const roleIcons = {
   admin: Shield,
-  doctor: UserMd,
+  doctor: UserCheck,
   staff: User,
   patient: User,
 };
@@ -178,7 +178,7 @@ export default function Users() {
         <Card>
           <CardContent className="p-6">
             <div className="flex items-center">
-              <UserMd className="h-8 w-8 text-blue-600" />
+              <UserCheck className="h-8 w-8 text-blue-600" />
               <div className="ml-4">
                 <p className="text-sm font-medium text-gray-600">Doctores</p>
                 <p className="text-2xl font-bold text-gray-900">

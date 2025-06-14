@@ -3,18 +3,18 @@ import { cn } from "@/lib/utils";
 import {
   LayoutDashboard,
   Users,
-  UserMd,
   Calendar,
   Settings,
   Shield,
   Stethoscope,
   MapPin,
+  UserCheck,
 } from "lucide-react";
 
 const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
   { name: "Pacientes", href: "/pacientes", icon: Users },
-  { name: "Doctores", href: "/doctores", icon: UserMd },
+  { name: "Doctores", href: "/doctores", icon: UserCheck },
   { name: "Citas", href: "/citas", icon: Calendar },
   { name: "Servicios", href: "/servicios", icon: Stethoscope },
   { name: "Usuarios", href: "/usuarios", icon: Shield },
